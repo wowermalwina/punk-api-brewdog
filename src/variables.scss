@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+
+$basic-padding: 10px;
+$basic-margin: 10px;
+
+$primary-color: #019bc8;
+$secondary-color: #144564;
+$light-color: #80cdef;
+$light-gray: #e3e3e3;
+$background-gray: #8b8e89;
+$dark-gray: #444;
+
+$font-family: "Merriweather Sans", sans-serif;
+$font-header-size: 1.7rem;
+$font-paragraph-size: 1.1rem;
+
+$border-rounding: 5px;
+
+$card-shadowing: 0 4px 7px rgba(128, 205, 239, 0.2),
+  0 4px 7px rgba(128, 205, 239, 0.27);
+$card-hover-shadowing: 0 14px 28px rgba(128, 205, 239, 0.27),
+  0 10px 10px rgba(128, 205, 239, 0.3);
+
+%card {
+  height: 400px;
+  width: 350px;
+  // height: 100%;
+  // width: 100%;
+  border-radius: $border-rounding;
+  box-shadow: $card-shadowing;
+  backface-visibility: hidden;
+  background-color: white;
+
+  &:hover {
+    box-shadow: $card-hover-shadowing;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+
+.nav {
+  height: 12vh;
+  width: 100%;
+  background-color: $dark-gray;
+  color: $light-color;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid $light-color;
+  position: fixed;
+
+  .leftSide {
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      margin-left: $basic-margin;
+
+      h1 {
+        font-size: $font-header-size;
+      }
+      p {
+        font-size: $font-paragraph-size;
+      }
+    }
+
+    img {
+      width: auto;
+      height: 9vh;
+    }
+  }
+  .rightSide {
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+
+    & *:first-child {
+      margin-right: $basic-margin * 3;
+    }
+
+    a {
+      color: $light-color;
+      text-decoration: none;
+      font-size: $font-header-size * 0.8;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

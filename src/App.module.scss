@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+.app {
+  background-color: $light-gray;
+  overflow: hidden;
+  height: 100%;
+
+  .main {
+    display: flex;
+    flex-direction: row;
+
+    .gridContainer {
+      width: 80vw;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 13vh 0 0 20vw;
+      gap: $basic-margin 0;
+      overflow: hidden;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}
