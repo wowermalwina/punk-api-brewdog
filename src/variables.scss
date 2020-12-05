@@ -11,7 +11,7 @@ $background-gray: #8b8e89;
 $dark-gray: #444;
 
 $font-family: "Merriweather Sans", sans-serif;
-$font-header-size: 1.7rem;
+$font-header-size: 2vh;
 $font-paragraph-size: 1.1rem;
 
 $border-rounding: 5px;
@@ -22,8 +22,8 @@ $card-hover-shadowing: 0 14px 28px rgba(128, 205, 239, 0.27),
   0 10px 10px rgba(128, 205, 239, 0.3);
 
 %card {
-  height: 400px;
-  width: 350px;
+  height: 44vh;
+  width: 18vw;
   // height: 100%;
   // width: 100%;
   border-radius: $border-rounding;

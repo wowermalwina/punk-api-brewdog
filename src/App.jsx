@@ -33,7 +33,7 @@ const App = () => {
       <NavBar />
       <section className={styles.main}>
           <SideBar />
-        <div className={styles.gridContainer}>
+        <div className={styles.cardContainer}>
         {displayBeers}
         </div>
       </section>

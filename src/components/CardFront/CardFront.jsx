@@ -6,12 +6,14 @@ const CardFront = (props) => {
   return (
     <section className={styles.cardFront}>
       <img src={image_url} alt="Beer" />
+      <article>
       <h1>{name}</h1>
       <h2>{tagline}</h2>
       <div className={styles.bottomText}>
-        <p>{abv}</p>
-        <p>{first_brewed}</p>
-        </div>
+        <p>ABV: {abv}</p>
+        <p>First brewed: {first_brewed}</p>
+      </div>
+      </article>
     </section>
   );
 };
